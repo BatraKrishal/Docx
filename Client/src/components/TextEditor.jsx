@@ -4,6 +4,7 @@ import 'draft-js/dist/Draft.css';
 
 const TextEditor = () => {
   const [editorState, setEditorState] = useState(() => EditorState.createEmpty());
+  const [pageSize, setPageSize] = useState('A4');
 
   const handleEditorChange = (newState) => {
     setEditorState(newState);
@@ -12,6 +13,14 @@ const TextEditor = () => {
   const handleStyleToggle = (style) => {
     setEditorState(RichUtils.toggleInlineStyle(editorState, style));
   };
+
+  const sizeMap = {
+    A4: { width: '210mm', height: '297mm' },
+    Letter: { width: '8.5in', height: '11in' },
+    Custom: { width: '100%', height: 'auto' }, // fallback or default
+  };
+
+  const { width, height } = sizeMap[pageSize] || sizeMap.Custom;
 
   return (
     <div className="text-editor-container">
@@ -23,7 +32,7 @@ const TextEditor = () => {
       </div>
 
       {/* Editor */}
-      <div className="bg-white shadow mx-auto my-4" style={{ width: '210mm', height: '297mm' }}>
+      <div className="bg-white shadow mx-auto my-4 p-20 text-black" style={{ width, height }}>
         <Editor 
           editorState={editorState} 
           onChange={handleEditorChange} 
