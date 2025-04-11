@@ -1,6 +1,7 @@
 // client/src/App.jsx
 import { useState, useEffect } from 'react';
 import './App.css';
+import TextEditor from './components/TextEditor.jsx';
 
 function App() {
   const [data, setData] = useState(null);
@@ -13,8 +14,7 @@ function App() {
 
   return (
     <div>
-      <h1>Vite + React + Express</h1>
-      <p>Backend says: {data || "Loading..."}</p>
+      <TextEditor />
     </div>
   );
 }

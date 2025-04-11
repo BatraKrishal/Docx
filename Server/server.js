@@ -23,8 +23,8 @@ mongoose.connect(process.env.MONGO_URI, {
 .catch(err => console.log(err));
 
 // Routes
-// app.use('/api/documents', require('./routes/document-operations'));
-// app.use('/api/upload', require('./routes/upload'));
+ app.use('/api/documents', require('./routes/document-operations'));
+ app.use('/api/upload', require('./routes/upload'));
 
 // Add error handling middleware
 app.use((err, req, res, next) => {
