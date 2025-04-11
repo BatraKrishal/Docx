@@ -13,220 +13,219 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
-  width: 250px;
-  background-color: #f8f9fa;
-  border-right: 1px solid #dee2e6;
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.new-doc-btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #4a6fa5;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.new-doc-btn:hover {
-  background-color: #3a5a8a;
-}
-
-.document-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.document-item {
-  padding: 10px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  border-radius: 4px;
-  word-break: break-word;
-}
-
-.document-item:hover {
-  background-color: #e9ecef;
-}
-
-.document-item.active {
-  background-color: #dee2e6;
-  font-weight: bold;
-}
-
-/* Editor Container */
-.editor-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.welcome-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-  padding: 20px;
-}
-
-.welcome-screen h2 {
-  color: #4a6fa5;
-  margin-bottom: 10px;
-}
-
-.welcome-screen p {
-  color: #6c757d;
-  margin-bottom: 20px;
-}
-
-.welcome-btn {
-  padding: 10px 20px;
-  background-color: #4a6fa5;
-  color: white;
-  border: none;
-  border-radius: 4px; 
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.welcome-btn:hover {
-  background-color: #3a5a8a;
-}
-
-/* Text Editor Styles */
-.text-editor-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 20px;
-}
-
-.document-title {
-  font-size: 24px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #dee2e6;
-  border-radius: 4px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Ribbon Toolbar */
-.ribbon-toolbar {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-  background-color: #f4f4f4;
-  border-bottom: 1px solid #ccc;
-}
-
-.ribbon-toolbar button {
-  padding: 5px 10px;
-  border: 1px solid #000000;
-  background-color: #400050;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
-}
-
-.ribbon-toolbar button:hover {
-  background-color: #5a007541;
-}
-
-.ribbon-toolbar button:active {
-  background-color: #d0d0d0;
-}
-
-.tool-btn {
-  width: calc(100% - 8px);
-  padding: 6px;
-  margin: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.6);
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.tool-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(-1px);
-}
-
-.tool-select {
-  width: calc(100% - 8px);
-  padding: 4px;
-  margin: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.6);
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
-.tab-content {
-  width: 100%;
-  padding: 8px 4px;
-}
-
-.formatting-group,
-.font-group,
-.alignment-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-input[type="color"] {
-  width: calc(100% - 8px);
-  height: 30px;
-  padding: 2px;
-}
-
-.tabs {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 8px;
-}
-
-.tab-btn {
-  width: 100%;
-  padding: 8px;
-  text-align: center;
-  background: transparent;
-  border: none;
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
-}
-
-.tab-btn:hover {
-  background: rgba(59, 130, 246, 0.1);
-}
-
-.ribbon {
-  background: rgba(255, 255, 255, 0.7) !important;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  overflow: auto;
-  scrollbar-width: none;     /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-  margin: 10px;
-}
-
-.ribbon::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, Opera */
-}
+    width: 250px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .new-doc-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a6fa5;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .new-doc-btn:hover {
+    background-color: #3a5a8a;
+  }
+  
+  .document-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .document-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    word-break: break-word;
+  }
+  
+  .document-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  .document-item.active {
+    background-color: #dee2e6;
+    font-weight: bold;
+  }
+  
+  /* Editor Container */
+  .editor-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-screen h2 {
+    color: #4a6fa5;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-screen p {
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-btn {
+    padding: 10px 20px;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .welcome-btn:hover {
+    background-color: #3a5a8a;
+  }
+  
+  /* Text Editor Styles */
+  .text-editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .document-title {
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Ribbon Toolbar */
+  .ribbon-toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .ribbon-toolbar button {
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    background-color: #400050;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .ribbon-toolbar button:hover {
+    background-color: #5a007541;
+  }
+  
+  .ribbon-toolbar button:active {
+    background-color: #d0d0d0;
+  }
+  
+  .tool-btn {
+    width: calc(100% - 8px);
+    padding: 6px;
+    margin: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .tool-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+  }
+  
+  .tool-select {
+    width: calc(100% - 8px);
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .tab-content {
+    width: 100%;
+    padding: 8px 4px;
+  }
+  
+  .formatting-group,
+  .font-group,
+  .alignment-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="color"] {
+    width: calc(100% - 8px);
+    height: 30px;
+    padding: 2px;
+  }
+  
+  .tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border: none;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .tab-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+  }
+  
+  .ribbon {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    overflow: auto;
+    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    margin: 10px;
+  }
+  
+  .ribbon::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Opera */
+  }

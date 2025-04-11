@@ -88,12 +88,12 @@ const TextEditor = () => {
   return (
     <div className="text-editor-container">
       {/* Ribbon Toolbar */}
-      <div className="ribbon fixed left-0 top-[15%] w-[5vw] h-[70vh]">
+      <div className="ribbon fixed left-0 top-[15%] w-[8vw] h-[70vh] text-black">
         <div className="tabs flex flex-col">
           {['home', 'file', 'view', 'insert'].map(tab => (
             <button
               key={tab}
-              className={`tab-btn p-2 ${activeTab === tab ? 'bg-blue-500 text-white' : ''}`}
+              className={`tab-btn p-2 ${activeTab === tab ? 'text-white  bg-blue-500 rounded-lg hover:!bg-blue-500' : ''} `}
               onClick={() => setActiveTab(tab)}
             >
               {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -102,7 +102,7 @@ const TextEditor = () => {
         </div>
         {renderTabContent()}
       </div>
-      
+
       {/* Editor */}
       <div className="bg-white shadow mx-auto my-4 p-20 text-black" style={{ width, height }}>
         <Editor 
