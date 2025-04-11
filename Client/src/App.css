@@ -24,7 +24,7 @@ body {
   width: 100%;
   padding: 10px;
   background-color: #4a6fa5;
-  color: white;
+  color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -59,7 +59,7 @@ body {
 }
 
 /* Editor Container */
- .editor-container {
+.editor-container {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -98,10 +98,10 @@ body {
 
 .welcome-btn:hover {
   background-color: #3a5a8a;
-}  */
+}
 
 /* Text Editor Styles */
- .text-editor-container {
+.text-editor-container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -118,49 +118,6 @@ body {
   box-sizing: border-box;
 }
 
-.ql-toolbar {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border: 1px solid #dee2e6 !important;
-}
-
-.ql-container {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border: 1px solid #dee2e6 !important;
-  flex: 1;
-}
-
-.quill-editor {
-  height: calc(100% - 60px);
-  display: flex;
-  flex-direction: column;
-}
-
-.ql-editor {
-  flex: 1;
-  overflow-y: auto;
-}
-
-/* Toolbar Button Styles */
-.ql-toolbar button {
-  margin-right: 5px;
-  padding: 5px 8px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 3px;
-}
-
-.ql-toolbar button:hover {
-  background-color: #e9ecef;
-}
-
-.ql-toolbar select {
-  margin-right: 5px;
-  padding: 5px;
-  cursor: pointer;
-} 
-
 /* Ribbon Toolbar */
 .ribbon-toolbar {
   display: flex;
@@ -172,17 +129,104 @@ body {
 
 .ribbon-toolbar button {
   padding: 5px 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  border: 1px solid #000000;
+  background-color: #400050;
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;
 }
 
 .ribbon-toolbar button:hover {
-  background-color: #e0e0e0;
+  background-color: #5a007541;
 }
 
 .ribbon-toolbar button:active {
   background-color: #d0d0d0;
+}
+
+.tool-btn {
+  width: calc(100% - 8px);
+  padding: 6px;
+  margin: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.tool-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.tool-select {
+  width: calc(100% - 8px);
+  padding: 4px;
+  margin: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.tab-content {
+  width: 100%;
+  padding: 8px 4px;
+}
+
+.formatting-group,
+.font-group,
+.alignment-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input[type="color"] {
+  width: calc(100% - 8px);
+  height: 30px;
+  padding: 2px;
+}
+
+.tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+}
+
+.tab-btn {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.tab-btn:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.ribbon {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  overflow: auto;
+  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  margin: 10px;
+}
+
+.ribbon::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
 }
